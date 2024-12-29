@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntersectionObserver Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: white;
+    }
+    .section-1 { background: #ff5733; }
+    .section-2 { background: #33c4ff; }
+    .section-3 { background: #85ff33; }
+  </style>
+</head>
+<body>
+  <header id="header">Welcome</header>
+
+  <section class="section-1">Section 1</section>
+  <section class="section-2">Section 2</section>
+  <section class="section-3">Section 3</section>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
