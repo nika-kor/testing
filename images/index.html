@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        /* .div{
+            background-color: black;
+            transition: all 5s;
+        }
+        .visible {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        } */
+        .lazy-img {
+            opacity: 0;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            transition: opacity 2s;
+        }
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="div"></div> -->
+
+    <img src="https://cms.imgworlds.com/assets/473cfc50-242c-46f8-80be-68b867e28919.jpg?key=home-gallery" data-src="" alt="Lazy loaded image" class="lazy-img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMULI0cGg1cMIW0W7f2RNWuoPSpsIEZNOvw&s" data-src="" alt="Lazy loaded image" class="lazy-img">
+    <img src="https://media1.thrillophilia.com/filestore/uwpz857lua13qmvub6um2v93dlrm_IMG%20Worlds%20%20of%20Adventure.jpg?w=400&dpr=2" data-src="" alt="Lazy loaded image" class="lazy-img">
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
